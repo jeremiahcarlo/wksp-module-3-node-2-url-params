@@ -26,7 +26,13 @@ app.get('/question10', q10)
 
 ```js
 // ...
+`/question/6`
+app.get('/question/:number', (req, res) => {
+    const number = req.params.number;
+console.log(number);
+});
 
+// params is also an object 
 ```
 
 </div></div>
