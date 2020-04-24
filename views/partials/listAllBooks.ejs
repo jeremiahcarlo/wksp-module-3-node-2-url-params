@@ -1,0 +1,11 @@
+<div class="container-books">
+  <% books.forEach(book => { %>
+  <div class="book">
+    <a href="http://localhost:8000/books/book/<%= book.id %>">
+      <img src="<%= book.imgUrl %>" alt="<%= book.title %> ">
+    </a>
+    <p><%= book.title %> </p>
+    <p><%= book.author %> </p>
+  </div>
+  <% }) %>
+</div>

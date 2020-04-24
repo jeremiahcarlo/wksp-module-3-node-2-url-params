@@ -47,8 +47,13 @@ What notation do we use to run JS snippets inside of an `.ejs` file?
 - What is the minimum amount of code to set up an express server?
 
 ```js
-// Example
+const express = require('express');
+const app = express();
+app.get('/hello', function(request,response){
+    response.send('hello');
+});
 
+app.listen(8000), console.log('Server is up')
 ```
 
 ---

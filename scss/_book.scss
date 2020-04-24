@@ -1,0 +1,36 @@
+.container-books {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 50px;
+  grid-gap: 50px;
+  align-self: center;
+}
+
+.container-books img {
+  height: 200px;
+}
+
+.container-book {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.book {
+  text-align: center;
+  box-shadow: 0 0 10px 1px #ddd;
+  padding: 20px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+// Media Query
+@media screen and (max-width:768px) {
+  .container-books {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+}
